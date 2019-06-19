@@ -7,7 +7,9 @@ def second_challenge
   }
 
   #code your solution here!
-
   
-
+  array = []
+  # array << groceries.values.join(", ")
+  array << groceries.values
+  array.join(",").to_s.split(/,/)
 end

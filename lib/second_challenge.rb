@@ -1,3 +1,4 @@
+
 def second_challenge
   groceries = {
    dairy: ["milk", "yogurt", "cheese"],
@@ -7,7 +8,14 @@ def second_challenge
   }
 
   #code your solution here!
-
+  array1 = []
+  groceries.values.each do |array|
+    array.each do |item|
+      array1.push(item)
+    end
+  end
+  array1
   
+
 
 end

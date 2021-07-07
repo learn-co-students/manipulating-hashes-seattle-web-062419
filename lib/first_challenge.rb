@@ -1,3 +1,4 @@
+
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -14,9 +15,23 @@ def first_challenge
   }
 
   #your code here
-
-
-  #remember to return your newly altered contacts hash!
-  contacts
+  contacts["Freddy Mercury"][:favorite_icecream_flavors].delete_if do |flavor|
+    flavor == "strawberry"
+  end
+  return contacts
 end
+    
+#   contacts.collect do |person, data|
+#     data.collect do |attribute, value|
+#       # if attribute == :favorite_icecream_flavors
+#         value.collect do |flavor| 
+#           flavor.delete_if {|flavor| flavor == "strawberry"}
+#             return contacts
+  
+#           end
+#         end
+#   return contacts
+#   #remember to return your newly altered contacts hash!
+# end
+# end
 
